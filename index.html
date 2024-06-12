@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Dark Theme Website Design</title>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+        <img src="logo.png" alt=""class="logo">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Hire Me</a></li>
+            </li>
+          </ul>
+          <img src="moon.png" alt=""id="icon">
+        </nav>
+        <div class="info">
+            <h1>I'm <span>Kate</span> Amelia </h1>
+               <p>This is my official Portfolio to showcase
+                all works related web <br>development and UI design</p>
+                <a href="">Download CV</a>
+            </div>
+
+                <div class="img-box">
+                    <img src="pattern.png" alt=""class="back-img">
+                    <img src="girl.png" alt=""class="main-img">
+        </div>
+       <div class="social-links">
+        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-telegram"></i></a>
+       </div>
+    </div>
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src="sun.png";
+            }else{
+                icon.src="moon.png"
+            }
+        }
+    </script>
+</body>
+</html>
